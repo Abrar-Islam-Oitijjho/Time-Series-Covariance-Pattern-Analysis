@@ -39,7 +39,7 @@ The analysis leverages libraries such as NumPy, Pandas, and scikit-learn within 
 ## Features
 
 - 🎯 **Covariance Pattern Identification**: Utilizes semi-supervised learning to identify covariance patterns among time series EEG signals.
-- 🧩 **Subgroup Analysis**: Provides subgroup analysis for a comprehensive result.
+- 🧩 **Subgroup Analysis**: Provides subgroup analysis (across RAP thresholds and across parameters) for a comprehensive result.
 - 📏 **Resolution Analysis**: Provides analysis across resolutions for a comparison and understanding of the potential role of resolution.
 - ⚡ **Efficient Analysis**: Employs optimized algorithms for fast and accurate covariance matrix computation.
 - 🎨 **Visualization**: Provides tools for visualizing covariance patterns and EEG data.
