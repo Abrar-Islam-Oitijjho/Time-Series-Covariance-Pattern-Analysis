@@ -19,6 +19,8 @@ Application of semi-supervised ML methods to identify hidden covariance patterns
 
 - [About](#about)
 - [Features](#features)
+- [Data](#data)
+- [Method](#method)
 - [Result](#result)
 - [Quick Start](#quick-start)
 - [Installation](#installation)
@@ -41,6 +43,43 @@ The analysis leverages libraries such as NumPy, Pandas, and scikit-learn within 
 - ⚡ **Efficient Analysis**: Employs optimized algorithms for fast and accurate covariance matrix computation.
 - 🎨 **Visualization**: Provides tools for visualizing covariance patterns and EEG data.
 - 🛠️ **Extensible**: Modular design allows for easy integration of new machine learning models and EEG datasets.
+  
+## Method
+
+```text
+
+Covariance Analysis Workflow
+│
+├── 1. Data Preparation
+│   ├── Exclude patients with missing values
+│   ├── Form three parameter groups:
+│   │     • ICP–ABP parameters
+│   │     • ICP–ABP + NIRS parameters
+│   │     • ICP–ABP + PbtO2
+│   └── Apply analysis at:
+│         • 1-min resolution
+│         • Lower temporal resolutions
+│         • Three RAP states (intact / impaired / severely impaired)
+│
+├── 2. Agglomerative Hierarchical Clustering (AHC)
+│   ├── Use Euclidean distance
+│   ├── Build dendrograms (SciPy hierarchy)
+│   ├── Inspect merging patterns for similarity groups
+│   └── Quantify structure using cophenetic correlation
+│
+├── 3. Principal Component Analysis (PCA)
+│   ├── Reduce dimensionality (scikit-learn PCA)
+│   ├── Generate biplots (PC1–PC2)
+│   ├── Identify correlated parameters via vector alignment
+│   └── Examine explained variance (scree + cumulative plots)
+│
+└── 4. K-Means Clustering (KMCA)
+    ├── Use Euclidean similarity
+    ├── Compute WCSS across k values
+    ├── Apply elbow method to select optimal k
+    └── Fit clusters using scikit-learn KMeans
+
+```
 
 ## Result
 
