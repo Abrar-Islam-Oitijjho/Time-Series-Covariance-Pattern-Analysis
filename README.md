@@ -85,7 +85,7 @@ Covariance Analysis Workflow
 ## Result
 
 ### AHC Dendrogram of Full Data
-![AHC Dendrogram on Full Data](plots/ahc/M_Dendogram_NIRS_measures.png)
+<img src="plots/ahc/M_Dendogram_NIRS_measures.png" width="480">
 
 ### PCA Biplot of Full Data
 ![PCA Biplot on Full Data](plots/pca/M_PCA_biplot_NIRS_measures.png)
