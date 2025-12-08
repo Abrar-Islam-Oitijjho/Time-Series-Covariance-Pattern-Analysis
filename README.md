@@ -39,7 +39,8 @@ The analysis leverages libraries such as NumPy, Pandas, and scikit-learn within 
 ## Features
 
 - 🎯 **Covariance Pattern Identification**: Utilizes semi-supervised learning to identify covariance patterns among time series EEG signals.
-- 🧩 **Subgroup Analysis**: Provides subgroup analysis for a comprehensive analysis.
+- 🧩 **Subgroup Analysis**: Provides subgroup analysis for a comprehensive result.
+- 📏 **Resolution Analysis**: Provides analysis across resolutions for a comparison and understanding of the potential role of resolution.
 - ⚡ **Efficient Analysis**: Employs optimized algorithms for fast and accurate covariance matrix computation.
 - 🎨 **Visualization**: Provides tools for visualizing covariance patterns and EEG data.
 - 🛠️ **Extensible**: Modular design allows for easy integration of new machine learning models and EEG datasets.
@@ -100,7 +101,7 @@ Clone the repository and run the main script:
 git clone https://github.com/Abrar-Islam-Oitijjho/Time-Series-Covariance-Pattern-Analysis.git
 cd Time-Series-Covariance-Pattern-Analysis
 pip install -r requirements.txt
-jupyter notebook arima_analysis_main.ipynb
+jupyter notebook covariance_pattern_analysis_main(with_sub_group_resolution).ipynb
 ```
 
 ## Installation
@@ -116,10 +117,8 @@ jupyter notebook arima_analysis_main.ipynb
 
 ```
 ARIMA-Modeling-on-EEG-Time-Series-Data/
-├── code/               
-    ├── data_pre_processing.py          
-    ├── covariance_analysis.py            
-    └── covariance_analysis_main.ipynb            
+├── code/                      
+    └── covariance_pattern_analysis_main(with_sub_group_resolution).ipynb           
 ├── plots/
     ├── ahc        
     ├── kmca
