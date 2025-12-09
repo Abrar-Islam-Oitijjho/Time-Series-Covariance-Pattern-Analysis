@@ -184,7 +184,7 @@ ARIMA-Modeling-on-EEG-Time-Series-Data/
 
 ## Associated Publication
 
-For more information please visit: [Relationship Between RAP and Multi-Modal Cerebral Physiological Dynamics in Moderate/Severe Acute Traumatic Neural Injury: A CAHR-TBI Multivariate Analysis](https://www.mdpi.com/1424-8220/25/2/586)
+For more information please visit: [Relationship Between RAP and Multi-Modal Cerebral Physiological Dynamics in Moderate/Severe Acute Traumatic Neural Injury: A CAHR-TBI Multivariate Analysis](https://www.mdpi.com/2306-5354/12/9/1006)
 
 ## Contributing
 
