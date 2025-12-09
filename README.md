@@ -84,14 +84,57 @@ Covariance Analysis Workflow
 
 ## Result
 
-### AHC Dendrogram of Full Data
-<img src="plots/ahc/M_Dendogram_NIRS_measures.png" width="480">
+### AHC Dendrogram of Full Data (NIRS measures)
+<p align="center">
+  <img src="plots/ahc/M_Dendogram_NIRS_measures.png" width="480">
+</p>
 
-### PCA Biplot of Full Data
-![PCA Biplot on Full Data](plots/pca/M_PCA_biplot_NIRS_measures.png)
+### Other AHC Dendrograms
+<table>
+  <tr>
+    <td><img src="plots/ahc/5T_Dendogram_NIRS_measures.png"></td>
+    <td><img src="plots/ahc/Sub_group/M_2_Dendogram_NIRS_measures.png"></td>
+    <td><img src="plots/ahc/M_Dendogram_ICP_ABP_measures.png"></td>
+  </tr>
+  <tr>
+    <td align="center">Lower resolutions: 5-minute </td>
+    <td align="center">Sub-group: RAP>0.4 </td>
+    <td align="center">Ohter parameter group: ICP-ABP parameters </td>
+  </tr>
+</table>
 
-### KMCA Elbow Mehod of Full Data
-![KMCA Elbow Mehod on Full Data](plots/kmca/M_Elbow_methodNIRS_measures.png)
+### PCA Biplot of Full Data (NIRS measures)
+<p align="center">
+  <img src="plots/pca/M_PCA_biplot_NIRS_measures.png" width="480">
+</p>
+
+### Other PCA Biplots
+<table>
+  <tr>
+    <td><img src="plots/pca/5T_PCA_biplot_NIRS_measures.png"></td>
+    <td><img src="plots/pca/Sub_group/M_2_biplot_of_NIRS_measures.png"></td>
+    <td><img src="plots/pca/M_PCA_biplot_ICP_ABP_measures.png"></td>
+  </tr>
+  <tr>
+    <td align="center">Lower resolutions: 5-minute </td>
+    <td align="center">Sub-group: RAP>0.4 </td>
+    <td align="center">Ohter parameter group: ICP-ABP parameters </td>
+  </tr>
+</table>
+
+### KMCA Elbow Method of Full Data (NIRS measures)
+<img src="plots/kmca/M_Elbow_methodNIRS_measures.png" width="480">
+
+### KMCA Result
+
+| Resolution          | ICP-ABP-Derived Parameters                                                                 | ICP-ABP-Derived + NIRS-Derived Parameters                                                                                           | ICP-ABP-Derived + PbtO2                                                                 |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| 1-min               | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+| 5-min-by-5-min      | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+| 10-min-by-10-min    | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+| 30-min-by-30-min    | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+| Hour-by-hour        | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+
 
 # Quick Start
 
@@ -129,7 +172,7 @@ ARIMA-Modeling-on-EEG-Time-Series-Data/
 
 ## Associated Publication
 
-[Relationship Between RAP and Multi-Modal Cerebral Physiological Dynamics in Moderate/Severe Acute Traumatic Neural Injury: A CAHR-TBI Multivariate Analysis](https://www.mdpi.com/1424-8220/25/2/586)
+For more information please visit: [Relationship Between RAP and Multi-Modal Cerebral Physiological Dynamics in Moderate/Severe Acute Traumatic Neural Injury: A CAHR-TBI Multivariate Analysis](https://www.mdpi.com/1424-8220/25/2/586)
 
 ## Contributing
 
