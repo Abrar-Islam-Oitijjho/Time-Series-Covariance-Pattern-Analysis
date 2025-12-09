@@ -45,6 +45,10 @@ The analysis leverages libraries such as NumPy, Pandas, and scikit-learn within 
 - 🎨 **Visualization**: Provides tools for visualizing covariance patterns and EEG data.
 - 🛠️ **Extensible**: Modular design allows for easy integration of new machine learning models and EEG datasets.
   
+## Data
+
+The Canadian High-Resolution Traumatic Brain Injury (CAHR-TBI) Research Collaborative Data was utilized.
+
 ## Method
 
 ```text
@@ -127,13 +131,21 @@ Covariance Analysis Workflow
 
 ### KMCA Result
 
-| Resolution          | ICP-ABP-Derived Parameters                                                                 | ICP-ABP-Derived + NIRS-Derived Parameters                                                                                           | ICP-ABP-Derived + PbtO2                                                                 |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 1-min               | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
-| 5-min-by-5-min      | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
-| 10-min-by-10-min    | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
-| 30-min-by-30-min    | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
-| Hour-by-hour        | 0: [ICP] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                                                                     | 0: [rSO2_L, rSO2_R] <br> 1: [RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R] <br> 2: [MAP, CPP]                       | 0: [ICP, PbtO2] <br> 1: [MAP, CPP] <br> 2: [RAP, AMP, PRx, PAx, RAC]                      |
+### Minute-by-minute
+
+| Parameter Group                              | Cluster 1                  | Cluster 2                                                                                  | Cluster 3                                |
+|-----------------------------------------------|-----------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------|
+| ICP-ABP-derived parameters                    | ICP                         | MAP, CPP                                                                                    | RAP, AMP, PRx, PAx, RAC                   |
+| ICP-ABP-derived + NIRS-derived parameters     | rSO2_L, rSO2_R              | RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R                               | MAP, CPP                                  |
+| ICP-ABP-derived parameters + PbtO2            | ICP, PbtO2                  | MAP, CPP                                                                                    | RAP, AMP, PRx, PAx, RAC                   |
+
+### 5-minute-by-5-minute
+
+| Parameter Group                              | Cluster 1                  | Cluster 2                                                                                  | Cluster 3                                |
+|-----------------------------------------------|-----------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------|
+| ICP-ABP-derived parameters                    | ICP                         | MAP, CPP                                                                                    | RAP, AMP, PRx, PAx, RAC                   |
+| ICP-ABP-derived + NIRS-derived parameters     | rSO2_L, rSO2_R              | RAP, ICP, AMP, PRx, PAx, RAC, COx_L, COx_R, COx-a_L, COx-a_R                               | MAP, CPP                                  |
+| ICP-ABP-derived parameters + PbtO2            | ICP, PbtO2                  | MAP, CPP                                                                                    | RAP, AMP, PRx, PAx, RAC                   |
 
 
 # Quick Start
