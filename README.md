@@ -171,7 +171,7 @@ jupyter notebook covariance_pattern_analysis_main(with_sub_group_resolution).ipy
 ## Project Structure
 
 ```
-ARIMA-Modeling-on-EEG-Time-Series-Data/
+Time-Series-Covariance-Pattern-Analysis/
 ├── code/                      
     └── covariance_pattern_analysis_main(with_sub_group_resolution).ipynb           
 ├── plots/
@@ -201,7 +201,7 @@ Contributions are welcome!
 ## Support
 
 - 📧 **Email**: abraroitijjho35@gmail.com
-- 🐛 **Issues**: [GitHub Issues](https://github.com/Abrar-Islam-Oitijjho/ARIMA-Modeling-on-EEG-Time-Series-Data/issues)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Abrar-Islam-Oitijjho/Time-Series-Covariance-Pattern-Analysis/issues)
 
 ## Acknowledgments
 
